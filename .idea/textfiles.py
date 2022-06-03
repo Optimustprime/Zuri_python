@@ -18,11 +18,15 @@ def count_words():
     counts=dict(enumerate(per_word,start=1))
     counts={v:k for k, v in counts.items()}
     unique=set(per_word)
-
+    # count=dict()
+    #
     # for word in unique:
-    #     if word not in counts:
-    #         counts[word]=1
+    #     if word not in count:
+    #         count[word]=1
     #     else:
-    #         counts[word]+=1
+    #         count[word]+=1
     return counts
+print("///////////////////////////////////////////////")
+print("METHOD 1: ALLOCATING UNIQUE KEYS TO EACH WORDS")
 print(count_words())
+print("METHOD 2: ALLOCATING KEYS TO EACH WORDS")
